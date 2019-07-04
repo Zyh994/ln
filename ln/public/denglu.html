@@ -1,0 +1,135 @@
+ <!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		*{margin:0;padding:0;}
+	
+		#d1{
+			width:100%;height:870px;
+			background-image:url(dl1.jpg);
+			background-repeat:no-repeat;
+			background-size:100%;
+			margin:12px 15px;
+			
+/*			background-size:cover;*/
+		}
+		div.d2{
+			width:300px;height:300px;
+			margin-top:9%;
+			margin-left:68%;
+			background-color:rgba(0,0,0,.1);
+/*			border-color:transparent;*/
+			padding:5px;
+		}
+		#d1 a{
+			color:#fff;font-size:16px;
+			text-decoration:none;
+		}
+		#d1>.d2 table{
+		width:100%;
+		}
+		#d1>.d2 table h4{
+		color:#fff;
+		margin:16px 0;
+		}
+		input.uname,input.upwd{
+		width:100%;height:28px;
+		border:0;outline:0;
+		border-radius:20px;
+		margin:15px 0;
+		padding:5px 15px;
+		box-sizing:border-box;
+		}
+		input.upwd{
+		
+		}
+		div.d2 table tr td label{
+		color:#fff;
+		margin:10px;
+		}
+		div.d2 button{
+		width:100%;height:35px;
+		margin-top:10px;
+		background-color:#0aa1ed;
+		color:#fff;
+		border:0;
+		font-size:15px;
+		}
+	</style>
+	</head>
+	<body>
+	
+	<div id="d1">
+	<table></table>
+		<div class="d2">
+			<table>
+			<tr>
+				<td>
+					<h4>欢迎登陆</h4>
+				</td>
+				<td align="right">
+					<a href="http://127.0.0.1:8080/zhuce.html">新用户注册</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="text" class="uname" placeholder="请输入用户名" id="uname">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="password" class="upwd" placeholder="请输入密码" id="upwd">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="auto">
+					<label for="auto">自动登录</label>
+				</td>
+				<td align="right">
+					<a href="">忘记密码</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button onclick="check_login()">登录</button>
+				</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+		<script>
+			function check_login(){
+				if(!uname.value){
+					alert("用户名为空");
+					return;
+				}
+				if(!upwd.value){
+					alert("用户密码为空");
+					return;
+				}
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4 && xhr.status==200){
+						var result=xhr.responseText;
+						if(result==1){
+							alert("登陆成功");
+							window.location.href="http://www.baidu.com";
+						}else if(result==0){
+							alert("登录失败");
+						}
+					}
+				}
+				xhr.open("get","/mypro/v1/login/"+uname.value+"-"+upwd.value,true);
+				xhr.send();
+			}
+		</script>
+	</body>
+</html>
