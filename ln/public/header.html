@@ -12,38 +12,40 @@
     <link rel="stylesheet" href="css/comm.css">
 </head>
 <body>
-  <div class="container position-relative bg-dark-1">
+  <div class="container position-relative bg-dark-1 ">
     <table></table>
     <div class="navbar navbar-expand-md  navbar-dark">
       <!-- 1.导航栏最前面，不隐藏的标题-->
-      <a class="navbar-brand" href="">欢迎来到<sup>AJ</sup></a>
+      <a class="navbar-brand py-0 " href="">欢迎来到<sup>AJ</sup></a>
       <!-- 2.在sm出现的按钮，上面有三条线，是折叠的触发按钮-->
       <button data-toggle="collapse" data-target="#content" class="navbar-toggler">
           <span class="navbar-toggler-icon"></span>
       </button>
       <!-- 3.导航栏里的菜单项，md以上横向，sm纵向现实-->
-      <div id="content" class="collapse navbar-collapse">
+      <div id="content " class="collapse navbar-collapse">
       <ul class="navbar-nav">
           <li class="nav-item">
-              <a href="denglu.html" class="nav-link">登录</a>
+              <a href="denglu.html" class="nav-link py-0 font_0_8">登录</a>
           </li>
           <li class="nav-item">
-              <a href="zhuce.html" class="nav-link">注册</a>
+              <a href="zhuce.html" class="nav-link py-0 font_0_8">注册</a>
           </li>
           <li class="nav-item">
-              <a href="#" class="nav-link">首页</a>
+              <a href="#" class="nav-link py-0 font_0_8">首页</a>
           </li>
           <li class="nav-item">
-              <a href="#" class="nav-link">帮助</a>
+              <a href="#" class="nav-link py-0 font_0_8">帮助</a>
           </li>
           <li class="nav-item">
-              <a href="#" class="nav-link">购物车</a>
+              <a href="#" class="nav-link py-0 font_0_8">购物车</a>
           </li>
       </ul>
       </div>
-      <div >
-        <input type="text" placeholder="请输入搜索关键字">
-        <img src="img/header.jpg" alt="" class="">
+      <div class="collapse " id="demo">
+        <input type="text" placeholder="请输入搜索关键字" >
+        </div>
+      <div class="d-inline-block" data-toggle="collapse" data-target="#demo">
+        <img src="img/header.jpg" alt=""   >
       </div>
   </div>
   </div>

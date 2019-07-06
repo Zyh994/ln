@@ -4,10 +4,18 @@
 margin: 0px;
 padding: 0px; }
 
+.font_0_8{
+  font-size:0.8rem;
+}
+.font_1_0{
+  font-size:1rem;
+}
+
 body {
   background: #f5f5f5;
   color: #000;
-  font-family: 黑体; }
+  font-family: 黑体;
+ }
 
 .font_small {
   font-size: 0.8rem; }
@@ -23,7 +31,6 @@ body {
 .f_bg{background: #e8e8e8;}
 
 .bg-dark-1{
-  line-height: 1px;
   background: rgb(0,0,0);
   border-radius:0.25rem;
 }
