@@ -21,3 +21,10 @@ body {
   .my_footer{height: 38rem;}
 }
 .f_bg{background: #e8e8e8;}
+
+.bg-dark-1{
+  line-height: 6px;
+  background: rgba(169,169,169,.1);
+  border-radius:0.25rem;
+}
+
