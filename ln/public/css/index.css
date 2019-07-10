@@ -1,10 +1,10 @@
 .my_header,.my_footer{width:100%;}
 @media (min-width: 992px){
-    .my_header{height: 5.5rem;}
+    .my_header{height: 3.5rem;}
     .my_footer{height: 58rem;}
 }
 @media (max-width: 991px) and (min-width: 576px){
-    .my_header{height: 11rem;}
+    .my_header{height: 4rem;}
     .my_footer{height: 38rem;}
 }
 /* 轮播样式 */
@@ -23,5 +23,5 @@ border-radius: 4px;
     margin-right:6px;
 }
 .carousel-indicators li.active{
-    background: #0aa1ed;
+    background: #ffdab9;
 }
