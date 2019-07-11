@@ -25,3 +25,6 @@ border-radius: 4px;
 .carousel-indicators li.active{
     background: #ffdab9;
 }
+
+.my_fl_left_img{transition: 1s;}
+.my_fl_left_img:hover{transform: scale(1.1);}

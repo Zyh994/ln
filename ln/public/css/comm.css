@@ -16,6 +16,11 @@ body {
   color: #000;
   font-family: 微软雅黑;
  }
+h3{
+  background: #f5f5f5;
+  color: #fff;
+  font-family: 微软雅黑;
+}
 
 .f_bg{background: #e8e8e8;}
 
@@ -23,4 +28,5 @@ body {
   background: rgb(0,0,0);
   border-radius:0.25rem;
 }
+
 
