@@ -27,4 +27,20 @@ border-radius: 4px;
 }
 
 .my_fl_left_img{transition: 1s;}
-.my_fl_left_img:hover{transform: scale(1.1);}
+/* .my_fl_left_img:hover{transform: scaleY(1.1);} */
+.index-pro li{
+    position:relative;
+    overflow: hidden;
+}
+.index-pro li div{
+    position:absolute;
+    bottom:-50px;
+    width:100%;height:50px;
+    background:gray;
+    text-align:center;
+    line-height:50px;
+    transition:all 0.5s linear;
+}
+.index-pro li img:hover+div{
+    bottom:0;
+}
