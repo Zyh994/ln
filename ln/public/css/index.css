@@ -5,7 +5,7 @@
 }
 @media (max-width: 991px) and (min-width: 576px){
     .my_header{height: 4rem;}
-    .my_footer{height: 38rem;}
+    .my_footer{height: 60rem;}
 }
 /* 轮播样式 */
 .carousel-control-prev,
@@ -36,10 +36,11 @@ border-radius: 4px;
     position:absolute;
     bottom:-50px;
     width:100%;height:50px;
-    background:gray;
+    background: rgba(0,0,0,.1);
     text-align:center;
     line-height:50px;
     transition:all 0.5s linear;
+    color:#fff;
 }
 .index-pro li img:hover+div{
     bottom:0;
