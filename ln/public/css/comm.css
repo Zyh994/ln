@@ -10,6 +10,9 @@ padding: 0px; }
 .font_1_0{
   font-size:1rem;
 }
+.bg-white ul>li a{
+  text-decoration: none;
+}
 
 body {
   background: #f5f5f5;
@@ -53,3 +56,12 @@ p{
   width:28px;
   height:25px;
 }
+._f h6>a{
+  color:#fff;
+  text-decoration: none;
+}
+._f ul>li a{
+  color:#fff;
+  text-decoration: none;
+}
+._f ul>li a:hover{transform: scale(1.1);}

@@ -45,4 +45,6 @@ border-radius: 4px;
 .index-pro li img:hover+div{
     bottom:0;
 }
-
+.clear{
+    background-image: url(../img/banner06.jpg);
+}
