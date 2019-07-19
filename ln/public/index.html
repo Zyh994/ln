@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-       <iframe class="my_header" src="header.html" frameborder="0" scrolling="no"></iframe>
+    <header id="header" class="container">
     </header>
 
-    <div class="con">
-        <div class="carousel mb-3" id="demo" data-ride="carousel">
+ <div class="con"> 
+        <div class="carousel mb-3 mt-4" id="dem" data-ride="carousel">
             <!-- 图片 -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -35,18 +34,18 @@
                 </div>
             </div>
             <!-- 箭头 -->
-            <a href="#demo" class="carousel-control-next" data-slide="next">
+            <a href="#dem" class="carousel-control-next" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
-            <a href="#demo" class="carousel-control-prev" data-slide="prev">
+            <a href="#dem" class="carousel-control-prev" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
             <!-- 轮播指示器 -->
             <ul class="carousel-indicators">
                 <li class="active" data-slide-to="0" data-target="#demo"></li>
-                <li  data-slide-to="0" data-target="#demo"></li>
-                <li  data-slide-to="0" data-target="#demo"></li>
-                <li  data-slide-to="0" data-target="#demo"></li>
+                <li  data-slide-to="0" data-target="#dem"></li>
+                <li  data-slide-to="0" data-target="#dem"></li>
+                <li  data-slide-to="0" data-target="#dem"></li>
             </ul>
         </div>
       
@@ -54,7 +53,7 @@
         <!-- AJ商品 -->
     <div class="clear ">
             <h3 class="bg-dark-1 mb-3">AJ商品</h3>
-        <ul class="index-pro list-unstyled d-flex folat-left justify-content-between">
+        <ul class="index-pro list-unstyled d-flex folat-left mx-5  justify-content-between">
             <li>
                 <img class="w-100 my_fl_left_img " src="img/Aj2.jpg" alt="">
                 <div>Air Jordan 5 Camo</div>
@@ -76,7 +75,7 @@
                 <div>Air Jordan 6 Camo</div>
              </li>
         </ul>
-        <ul class="index-pro list-unstyled d-flex folat-left justify-content-between">
+        <ul class="index-pro list-unstyled d-flex folat-left mx-5 justify-content-between">
             <li>
                 <img class="w-100 my_fl_left_img " src="img/Aj8.jpg" alt="">
                 <div>Air Jordan 13 Camo</div>
@@ -99,10 +98,11 @@
              </li>
         </ul>
     </div>
-</div>
+ </div> 
 
-    <footer>
-            <iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+    <footer id="footer" class="container">
      </footer>
+     <script src="js/header.js"></script>
+     <script src="js/footer.js"></script>
 </body>
 </html>
