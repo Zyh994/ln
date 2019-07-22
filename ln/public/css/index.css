@@ -59,8 +59,31 @@ border-radius: 4px;
     opacity:1;
     border-radius:12px;
 }
+/* 全部宽度 */
 .con{
     width:1300px;
     margin-right: auto;
     margin-left: auto;
+}
+/* wearejordan */
+.wearejordan{
+    position: relative;
+}
+.wearejordan > div{
+    position: absolute;
+    top: 218px;
+    right: 49px;
+    color: #666666;
+    font-size: 18px;
+}
+
+.wearejordan>div>a {
+    margin-top: 10px;
+    display: block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #000000;
+    color: #FFFFFF;
 }
