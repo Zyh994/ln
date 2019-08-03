@@ -91,8 +91,26 @@ border-radius: 4px;
 .k2{
     background-image: url(../img/ai-bg.jpg);
 }
+.k2 ul>li img{
+    opacity: 0.3;
+}
+.k2 ul>li img:hover{
+    opacity: 1;
+}
+
 /* 轮播视频 */
 .lo1{
     width:672px;
     height:378px;
+}
+.k2 .carousel-inner{
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.k2 .carousel-control-prev {
+    left: 1rem;
+}
+.k2 .carousel-control-next {
+    right: -1rem;
 }
