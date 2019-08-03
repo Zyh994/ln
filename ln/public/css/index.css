@@ -87,3 +87,12 @@ border-radius: 4px;
     background: #000000;
     color: #FFFFFF;
 }
+/* 轮播视频背景 */
+.k2{
+    background-image: url(../img/ai-bg.jpg);
+}
+/* 轮播视频 */
+.lo1{
+    width:672px;
+    height:378px;
+}
