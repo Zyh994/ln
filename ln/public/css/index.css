@@ -99,7 +99,7 @@ border-radius: 4px;
 }
 
 /* 轮播视频 */
-.lo1{
+.lo1 div>video{
     width:672px;
     height:378px;
 }
@@ -112,5 +112,9 @@ border-radius: 4px;
     left: 1rem;
 }
 .k2 .carousel-control-next {
-    right: -1rem;
+    right: 38rem;
+}
+.lo1 .carousel-control-prev, 
+.carousel-control-next{
+    width: 3%;
 }
