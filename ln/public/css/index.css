@@ -120,4 +120,14 @@ border-radius: 4px;
 .lo1 .carousel-control-prev, 
 .carousel-control-next{
     width: 3%;
+} 
+.lo1 .zx{
+    border:1px solid #666;
+    font-size: 20px;
+    position: absolute;
+    left: 70rem;
+    top: 2rem;
+}
+.zx a{
+    color: #666;
 }
