@@ -93,9 +93,12 @@ border-radius: 4px;
 }
 .k2 ul>li img{
     opacity: 0.3;
+    transition: 0.5s;
 }
 .k2 ul>li img:hover{
     opacity: 1;
+    transform: translateY(-10px);
+
 }
 
 /* 轮播视频 */
