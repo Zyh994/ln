@@ -2,13 +2,11 @@
 /*css reset*/
 * {
 margin: 0px;
-padding: 0px; }
+padding: 0px;
+ }
 
 .font_0_8{
   font-size:0.8rem;
-}
-.font_1_0{
-  font-size:1rem;
 }
 .bg-white ul>li a{
   text-decoration: none;
@@ -38,7 +36,6 @@ h3{
 
 .bg-dark-1{
   background: rgb(0,0,0);
-  border-radius:0.25rem;
 }
 
 .bode{
@@ -50,8 +47,8 @@ div.c1{
   z-index:100;
   position: fixed;
   width:100%;
-  top:-7px;
-  left:0;
+  top:0px;
+  left:0px;
 }
 p{
   margin-bottom:0rem;
@@ -77,4 +74,31 @@ p{
 ._f ul>li a:hover{
   color:#ccc;
 }
+ 
+/* btn2浮动 */
+.c1 #bxn2{
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  width: 16%;
+  display: none;
+  background: #000;
+}
 
+#bxn1:hover+#bxn2{
+  display:block;
+}
+#bxn2:hover{
+  display:block;
+}
+.c1{
+  margin: 0px;
+  padding: 0px;
+}
+/* btn2样式 */
+#bxn2 ul>li a{
+  color:#fff;
+}
+#bxn2 ul>li a:hover{
+  color:#ccc;
+}
