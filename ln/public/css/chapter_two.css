@@ -3,6 +3,9 @@
   margin-right: auto;
   margin-left: auto;
 }
+body{
+  background-color: #fff;
+}
 
 /* 图片标题 */
 .img-title{
@@ -21,4 +24,43 @@
   display: block;
   clear: both;
 
+}
+
+.my-big{
+  border: 1px solid #000;
+}
+.t2{
+  border: 1px solid #000;
+}
+
+.row ul>li img:hover{
+  transform: translateY(-8px);
+}
+
+h2{
+  font-size: 2em;
+  color: #666;
+}
+.t1 ul>li{
+  font-size: 20px;
+  margin-top: 12px;
+  color: #666;
+}
+
+h1{
+  font-size: 40px;
+  background: #000000;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.t3{
+  font-size: 18px;
+  color: #666;
+}
+.t4{
+  position: relative;
+}
+.t5{
+  position: absolute;
+  top: 240px;
 }
