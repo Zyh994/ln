@@ -2,6 +2,7 @@
   width:1300px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 body{
   background-color: #fff;
@@ -10,8 +11,8 @@ body{
 /* 图片标题 */
 .img-title{
   position: absolute;
-  left:54rem;
-  top:40rem;
+  left:560px;
+  top:600px;
   font-size: 30px;
   color:#fff;
 }
@@ -25,7 +26,7 @@ body{
   clear: both;
 
 }
-
+/* 介绍 */
 .my-big{
   border: 1px solid #000;
 }
@@ -63,4 +64,9 @@ h1{
 .t5{
   position: absolute;
   top: 240px;
+}
+.t6{
+  position: absolute;
+  top: 430px;
+  right: -52px;
 }
