@@ -36,13 +36,10 @@ border-radius: 4px;
 }
 .index-pro li img:hover+div{
     bottom:0;
-   
 }
-.clear{
-    background-image: url(../img/banner06.jpg);
-    
-    
-}
+
+
+
 .index-pro li img{
     opacity: 0.8;
     border-radius:12px; 
