@@ -54,15 +54,11 @@ border-radius: 4px;
 
 
 .index-pro li img{
-    opacity: 0.8;
+    opacity: 0.6;
     border-radius:12px; 
 }
 .index-pro li img:hover{
     opacity: 1;
-    border-radius:12px;
-}
-.clear ul li>img{
-    opacity: 0.8;
     border-radius:12px;
 }
 .clear ul li>img:hover{
