@@ -20,7 +20,7 @@ body{
  color: #000;
 }
 /* 解决高度坍塌 */
-.main::after{
+.main1::after{
   content: "";
   display: block;
   clear: both;

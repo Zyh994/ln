@@ -25,6 +25,16 @@ h3{
 
 .f_bg{background: #e8e8e8;}
 
+/* 定位 */
+
+.zyh{
+  position: absolute;
+  left: 380px;
+  top: 0px;
+  /* transition: all .5s linear; */
+}
+
+
 .zyh a{
   font-size: 1.5rem;
   color: #fff;
@@ -46,6 +56,7 @@ h3{
 div.c1{
   z-index:100;
   position: fixed;
+  height: 50px;
   width:100%;
   top:0px;
   left:0px;
