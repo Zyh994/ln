@@ -5,16 +5,16 @@ const pool=require('../pool.js');
 var router=express.Router();
 //添加路由
 //1.登录接口
-router.get('/v1/login/:uname-:upwd',(req,res)=>{
+router.get('/login',(req,res)=>{
 	var $uname=req.params.uname;
 	var $upwd=req.params.upwd;
 	pool.query('select * from ln_user where uname=? and upwd=?',[$uname,$upwd],(err,result)=>{
 	if(err)throw err;
 	console.log(result);
 	if(result.length>0){
-	res.send('1');
+	res.send({code:1,msg:"成功"});
 	}else{
-	res.send('0');
+	res.send({code:-1,msg:"失败"});
 	}
 	})
 });
