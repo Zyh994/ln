@@ -13,4 +13,4 @@ map.centerAndZoom(new BMap.Point( 104.066513,30.572262), 14);
 var local = new BMap.LocalSearch(map, {      
     renderOptions:{map: map}      
 });      
-local.search("春熙路AJ");
+local.search("春熙路IFS");
