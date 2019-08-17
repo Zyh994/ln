@@ -138,4 +138,27 @@ border-radius: 4px;
 .zx a{
     color: #666;
 }
-
+.bd1{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 1000px;
+    height: 300px;
+}
+#bd{
+    position: absolute;
+    width: 900px;
+    height: 300px;
+}
+.bd2{
+    position: absolute;
+    top: 50px;
+    left: 910px;
+}
+.bd3{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    font-size: 18px;
+    color: #666;
+}
