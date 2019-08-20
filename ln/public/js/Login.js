@@ -12,14 +12,17 @@ $(function(){
 
 $(".dd4 .dd5").click(function(){
         $.ajax({
-          url: "/Login",
-          type: "GET",
+          url: "/mypro/login",
+          type: "get",
           data: {
               uname: $("#uname").val(),
               upwd: $("#upwd").val()
           },
           success: function(data){    //    alert后台返回的参数
               alert(data);
+              // if(data==="登陆成功"){
+               window.location.href="http://127.0.0.1:8000/index.html"
+              // }
           },
           error: function(){
             alert('访问失败');
@@ -28,28 +31,5 @@ $(".dd4 .dd5").click(function(){
     });
 
 
-  // $("").click(function(){
-  //   if(!uname.value){
-  //     alert("用户名为空");
-  //     return;
-  //   }
-  //   if(!upwd.value){
-  //     alert("用户密码为空");
-  //     return;
-  //   }
-  //   var xhr=new XMLHttpRequest();
-  //   xhr.onreadystatechange=function(){
-  //     if(xhr.readyState==4 && xhr.status==200){
-  //       var result=xhr.responseText;
-  //       if(result==1){
-  //         alert("登陆成功");
-  //       }else if(result==0){
-  //         alert("登录失败");
-  //       }
-  //     }
-  //   }
-  //   xhr.open("get","/mypro/v1/login/"+uname.value+"-"+upwd.value,true);
-  //   xhr.send();
-  // });
 })
 
