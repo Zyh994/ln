@@ -5,6 +5,7 @@ $(function(){
       $(".c521 img").attr("src",img.alt);
   })
 }
+
 })
 
 // 地图

@@ -72,3 +72,15 @@ margin-top:20px;
   outline: medium;
   border: 0;
 }
+.dd2 span{
+  position: absolute;
+  top: 178px;
+  left: 50px;
+  color: antiquewhite;
+}
+.dd3 span{
+  position: absolute;
+  top: 248px;
+  left: 50px;
+  color: antiquewhite;
+}

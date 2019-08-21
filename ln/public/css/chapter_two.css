@@ -47,6 +47,9 @@ h2{
   margin-top: 12px;
   color: #666;
 }
+.t1 ul>li button{
+  color: #666;
+}
 
 h1{
   font-size: 40px;
@@ -69,4 +72,12 @@ h1{
   position: absolute;
   top: 430px;
   right: -52px;
+}
+.gif{
+  position: absolute;
+  top: 0px;
+  left: 900px;
+}
+.gif{
+  display: none;
 }

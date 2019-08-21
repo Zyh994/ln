@@ -20,17 +20,16 @@ router.get("/login",function(req,res){    //    获取登录传过来的值
 			}
 	}) 
 })
-	//2.注册(增加)
-// router.post('/v2/insert',(req,res)=>{
-// 	var obj=req.body;
-// 	pool.query('insert into ln_user set ?',[obj],(err,result)=>{
-// 	if(err)throw err;
-// 	console.log(result);
-// 	if(result.affectedRows>0){
-// 	res.send("1");
-	
-// 	}
-// 	})
-// })
+// 注册
+router.get('/insert',(req,res)=>{
+	var sql="insert into ln_user (uname,upwd) values(?,?)";    //    向user这个表里写入数据
+	var sqlValue=[req.query.uname,req.query.upwd];
+	pool.query(sql,sqlValue,function(err,result){    //    执行sql语句
+			if(err)throw err;
+			if(result.affectedRows>0){
+					res.send("注册成功");
+			}
+	});
+});
 //导出路由器
 module.exports=router; 
