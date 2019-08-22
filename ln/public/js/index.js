@@ -5,7 +5,9 @@ $(function(){
       $(".c521 img").attr("src",img.alt);
   })
 }
-
+$("#dem div img").hover(function(){
+  $(".gif").toggle();
+})
 })
 
 // 地图
