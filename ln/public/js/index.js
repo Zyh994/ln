@@ -5,8 +5,35 @@ $(function(){
       $(".c521 img").attr("src",img.alt);
   })
 }
-$("#dem div img").hover(function(){
-  $(".gif").toggle();
+$(".k2 ul>li .g1").hover(function(){
+  $(".gif .gif1").toggle();
+})
+$(".k2 ul>li .g2").hover(function(){
+  $(".gif .gif2").toggle();
+})
+$(".k2 ul>li .g3").hover(function(){
+  $(".gif .gif3").toggle();
+})
+$(".k2 ul>li .g4").hover(function(){
+  $(".gif .gif4").toggle();
+})
+$(".k2 ul>li .g6").hover(function(){
+  $(".gif .gif2").toggle();
+})
+$(".k2 ul>li .g7").hover(function(){
+  $(".gif .gif3").toggle();
+})
+$(".k2 ul>li .g8").hover(function(){
+  $(".gif .gif4").toggle();
+})
+$(".k2 ul>li .g9").hover(function(){
+  $(".gif .gif3").toggle();
+})
+$(".k2 ul>li .g10").hover(function(){
+  $(".gif .gif2").toggle();
+})
+$(".k2 ul>li .g5").hover(function(){
+  $(".gif .gif1").toggle();
 })
 })
 
