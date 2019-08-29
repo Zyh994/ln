@@ -63,7 +63,7 @@ $txtName.blur(function(){
 	vali($(this),3,9,"用户名必须介于3~9位之间!");
 })
 $txtPwd.blur(function(){
-	vali($(this),6,8,"密码必须介于6~8位之间!")
+	vali($(this),6,12,"密码必须介于6~12位之间!")
 })
 })
 
