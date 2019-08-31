@@ -1,5 +1,58 @@
 
-/* 轮播样式 */
+/* 轮播图片 */
+@charset "utf-8";
+body,ul {
+	padding: 0;
+	margin: 0;
+	
+}
+ul {
+	list-style: none;
+}
+.wrap {
+	position: relative;
+	width: 1300px;
+	height: 400px;
+    margin: 30px auto;
+    background: url("../img/login-bg_01.jpg");
+}
+.content {
+	position: absolute;
+	width: 1300px;
+	height: 400px;
+}
+.content li{
+	position: absolute;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.wrap a {
+	position: absolute;
+	display: none;
+	z-index: 2;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin-top: -30px;
+	font: 36px/60px "宋体";
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background: rgb(255, 100, 0);
+	background: rgba(255, 100, 0, .6);
+	transition: background 1s ease;
+}
+.wrap a:hover {
+	background: rgb(255, 100, 0);
+}
+.prev {
+	left: 30px;
+}
+.next {
+	right: 30px;
+}
+
+/* 视屏轮播样式 */
 .carousel-control-prev,
 .carousel-control-next{
 width:4%;height:20%;
@@ -22,7 +75,7 @@ border-radius: 4px;
 /* gif样式 */
 .gif .gif1{
     position: absolute;
-    top: 2350px;
+    top: 2000px;
     left: 1080px;
     width: 300px;
     height: 204px;
