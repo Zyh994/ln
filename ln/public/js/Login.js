@@ -36,8 +36,8 @@ $(".dd4 .dd6").click(function(){
     url:"/mypro/insert",
     type:"get",
     data: {
-      uname: $("#uname").val(),
-      upwd: $("#upwd").val()
+      uname: $("#username").val(),
+      upwd: $("#password").val()
   },
   success: function(data){    //    alert后台的返回值
     alert(data);

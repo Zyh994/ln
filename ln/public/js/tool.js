@@ -1,4 +1,5 @@
  // 轮播js
+
  function getStyle(obj,attr){
   return obj.currentStyle ? obj.currentStyle[attr] : window.getComputedStyle(obj,null)[attr];
 }
