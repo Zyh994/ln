@@ -10,28 +10,50 @@ $(function(){
     $("body").css("background","url(img/demo-1-bg.jpg)");
   })
 
+
+// 登录
 $(".dd4 .dd5").click(function(){
-        $.ajax({
-          url: "/mypro/login",
-          type: "get",
-          data: {
-              uname: $("#uname").val(),
-              upwd: $("#upwd").val()
-          },
-          success: function(data){    //    alert后台返回的参数
-              alert(data);
-              if(data==="登陆成功"){
-               window.location.href="http://127.0.0.1:8080/index.html";
-              }
-          },
-          error: function(){
-            alert('访问失败');
-          }
-      });
-    });
+  var uname = $("#uname").val();
+  var upwd = $("#upwd").val();
+  if(uname==""){
+    alert("用户名不能为空");
+    return;
+  }
+  if(upwd==""){
+    alert("密码不能为空");
+    return;
+  }
+  $.ajax({
+    url: "/mypro/login",
+    type: "get",
+    data: {
+        uname: $("#uname").val(),
+        upwd: $("#upwd").val()
+    },
+    success: function(data){    //    alert后台返回的参数
+        alert(data);
+        if(data==="登陆成功"){
+        window.location.href="http://127.0.0.1:8080/index.html";
+        }
+    },
+    error: function(){
+      alert('访问失败');
+    }
+  });
+});
 
 // 注册
 $(".dd4 .dd6").click(function(){
+  var uname = $("#username").val();
+  var upwd = $("#password").val();
+  if(uname==""){
+    alert("用户名不能为空");
+    return;
+  }
+  if(upwd==""){
+    alert("密码不能为空");
+    return;
+  }
   $.ajax({
     url:"/mypro/insert",
     type:"get",
@@ -41,8 +63,9 @@ $(".dd4 .dd6").click(function(){
   },
   success: function(data){    //    alert后台的返回值
     alert(data);
-    if(data==="注册成功")
+    if(data==="注册成功"){
     window.location.href="http://127.0.0.1:8080/Login.html";
+  }
 },
 error: function(){
     alert('访问失败');

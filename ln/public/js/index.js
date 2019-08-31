@@ -7,7 +7,6 @@ $(function(){
         success(res){
             if(res.code!=1){return;}
             var data = res.data;
-            console.log(data)
             var html1 = '';
             var html2 = '';
             for(var i=0;i<5;i++){
