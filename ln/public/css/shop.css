@@ -1,0 +1,57 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.con {
+  width: 1300px;
+  padding-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom:80px;
+}
+/* a按钮 */
+.button1{
+  width: 15px;
+  height: 15px;
+}
+.shop{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.photo1{
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  width: 150px;
+  height: 100px;
+}
+.font1 a{
+  position: absolute;
+  top: 0px;
+  left: 210px;
+}
+.font1 a{
+  font-size: 14px;
+  width: 390px;
+}
+.money{
+  position: absolute;
+  top: 0px;
+  left: 670px;
+}
+.button2{
+  position: absolute;
+  top: 0px;
+  left: 850px;
+}
+.font2 a{
+  position: absolute;
+  top: 0px;
+  left: 1100px;
+}
+.button2 input{
+  width: 41px;
+  height: 21px;
+}
