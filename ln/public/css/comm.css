@@ -137,3 +137,9 @@ p{
  .bor{
    display: none;
  }
+.x2 a{
+  color: #ccc;
+}
+.x2 a:hover{
+  color: #ccc;
+}

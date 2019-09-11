@@ -41,6 +41,12 @@ $(function(){
           </ul>
         </div>`
       $(html).appendTo(".p1")
+      $("img.my-small")
+      .hover(function(){
+        $("img.my-big")
+        .attr("src",$(this).attr("data-target"))
+      })
+
       $(".add").click(function(e){
         var pid = e.target.dataset.id;
         $.ajax({
@@ -62,9 +68,5 @@ $(function(){
       })
     }
   })
-$("img.my-small")
-.hover(function(){
-  $("img.my-big")
-  .attr("src",$(this).attr("data-target"))
-})
+
 })
