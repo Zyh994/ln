@@ -120,3 +120,20 @@ p{
   left: 10rem;;
   top: -2rem;
 }
+
+.bor{
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+.bor:hover .asd,.asd:hover{
+  display: block
+}
+ .asd{
+   position: absolute;
+   top: 37px;
+   left: 134px;
+   display: none;
+ }
+ .bor{
+   display: none;
+ }

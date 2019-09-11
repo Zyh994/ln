@@ -31,3 +31,35 @@ INSERT INTO ln_index_pic VALUES
 (NULL,"Air Jordan 8 Camo","img/Aj8.jpg","img/banner05.jpg"),
 (NULL,"Air Jordan 9 Camo","img/Aj9.jpg","img/banner055.jpg"),
 (NULL,"Air Jordan 10 Camo","img/Aj10.jpg","img/banner04.jpg");
+-- 购物车
+CREATE TABLE ln_shopping(
+  id  INT PRIMARY KEY AUTO_INCREMENT,
+  uid  INT,
+  pid INT,
+  img VARCHAR(64),
+  price DECIMAL(8,2),
+  title VARCHAR(32),
+  count INT
+);
+-- 商品详情页
+CREATE TABLE ln_chapter(
+  id  INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(32),
+  img  VARCHAR(64),
+  price DECIMAL(8,2)
+);
+INSERT INTO ln_chapter VALUES(NULL,'热门配色:"影子""Black/White""扣碎篮板""Chicago""北卡大学""黑武士""禁穿"',"img/aj1-s1.jpg",3999);
+
+
+-- 商品图片表
+CREATE TABLE ln_photo(
+  id  INT PRIMARY KEY AUTO_INCREMENT,
+  pid INT,
+  sm VARCHAR(64),
+  lg VARCHAR(64)
+);
+INSERT INTO ln_photo VALUES
+  (NULL,1,"img/aj1-s1.jpg","img/aj1-l1.jpg"),
+  (NULL,1,"img/aj1-s2.jpg","img/aj1-l2.jpg"),
+  (NULL,1,"img/aj1-s3.jpg","img/aj1-l3.jpg"),
+  (NULL,1,"img/aj1-s4.jpg","img/aj1-l4.jpg");

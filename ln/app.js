@@ -3,8 +3,16 @@ const express=require('express');
 const userRouter=require('./routes/mypro.js');
 //引入body-parser中间件
 const bodyParser=require('body-parser');
+//引入session模块
+const session=require("express-session");
 var app=express();
 app.listen(8080);
+//配置session模块
+app.use(session({
+  secret:"128位字符串",    //安全字符串
+  resave:true,            //请求时更新数据
+  saveUninitialized:true  //保存初始数据
+}));
 //托管静态资源到public
 app.use(express.static('public'));
 //使用body-parser中间件
